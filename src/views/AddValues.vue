@@ -30,7 +30,7 @@
 import { apiMethods } from "../state/helpers";
 
 export default {
-  name: "Add Values",
+  name: "AddValues",
   methods: {
     ...apiMethods,
     add() {

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddPrinciples.vue renders correctly 1`] = `
+<div>
+  <crow-stub
+    gutters="true"
+    tag="div"
+  >
+    <ccol-stub
+      sm="6"
+      tag="div"
+    >
+      <ccard-stub>
+        <cform-stub>
+          <ccardheader-stub>
+            <strong>
+              Add Principles 
+            </strong>
+            <small>
+              Form
+            </small>
+          </ccardheader-stub>
+           
+          <ccardbody-stub>
+            <ctextarea-stub
+              label="Name"
+              lazy="400"
+              placeholder="Enter your Principles "
+            />
+          </ccardbody-stub>
+           
+          <ccardfooter-stub>
+            <cbutton-stub
+              activeclass="router-link-active"
+              color="primary"
+              event="click"
+              exactactiveclass="router-link-exact-active"
+              routertag="a"
+              size="sm"
+              target="_self"
+              type="submit"
+            >
+              <cicon-stub
+                name="cil-check-circle"
+              />
+               Save
+            </cbutton-stub>
+          </ccardfooter-stub>
+        </cform-stub>
+      </ccard-stub>
+    </ccol-stub>
+  </crow-stub>
+</div>
+`;

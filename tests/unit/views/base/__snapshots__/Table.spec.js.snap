@@ -6,13 +6,12 @@ exports[`Table.vue renders correctly 1`] = `
     <cicon-stub
       name="cil-grid"
     />
-     Table
-    
+     Table 
   </ccardheader-stub>
    
   <ccardbody-stub>
     <cdatatable-stub
-      fields="name,registered,status,edit,delete"
+      fields="name,createdAt,status,edit,delete"
       header="true"
       itemsperpage="5"
       pagination="true"

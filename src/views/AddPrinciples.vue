@@ -29,7 +29,7 @@
 <script>
 import { apiMethods } from "../state/helpers";
 export default {
-  name: "Add Principles",
+  name: "AddPrinciples",
   methods: {
     ...apiMethods,
     add() {
