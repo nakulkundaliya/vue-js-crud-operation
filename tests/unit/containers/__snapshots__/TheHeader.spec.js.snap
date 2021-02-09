@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheHeader.vue renders correctly 1`] = `
+<cheader-stub
+  colorscheme="light"
+  fixed="true"
+  light=""
+  tag="header"
+  withsubheader="true"
+>
+  <ctoggler-stub
+    class="ml-3 d-lg-none"
+    inheader="true"
+    tag="button"
+  />
+   
+  <ctoggler-stub
+    class="ml-3 d-md-down-none"
+    inheader="true"
+    tag="button"
+  />
+   
+  <cheaderbrand-stub
+    activeclass="router-link-active"
+    class="mx-auto d-lg-none"
+    event="click"
+    exactactiveclass="router-link-exact-active"
+    routertag="a"
+    tag="div"
+    target="_self"
+    to="/"
+  >
+    <cicon-stub
+      alt="Logo"
+      height="48"
+      name="logo"
+    />
+  </cheaderbrand-stub>
+   
+  <cheadernav-stub
+    class="d-md-down-none mr-auto"
+  >
+    <cheadernavitem-stub
+      class="px-3"
+    >
+      <cheadernavlink-stub
+        activeclass="router-link-active"
+        event="click"
+        exactactiveclass="router-link-exact-active"
+        routertag="a"
+        target="_self"
+        to="/dashboard"
+      >
+        
+        Dashboard
+      
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+     
+    <cheadernavitem-stub
+      class="px-3"
+    >
+      <cheadernavlink-stub
+        activeclass="router-link-active"
+        event="click"
+        exact="true"
+        exactactiveclass="router-link-exact-active"
+        routertag="a"
+        target="_self"
+        to="/values"
+      >
+        
+        Values
+      
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+     
+    <cheadernavitem-stub
+      class="px-3"
+    >
+      <cheadernavlink-stub
+        activeclass="router-link-active"
+        event="click"
+        exact="true"
+        exactactiveclass="router-link-exact-active"
+        routertag="a"
+        target="_self"
+        to="/principles"
+      >
+        
+        Principles
+      
+      </cheadernavlink-stub>
+    </cheadernavitem-stub>
+  </cheadernav-stub>
+</cheader-stub>
+`;
