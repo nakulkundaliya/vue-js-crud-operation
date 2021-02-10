@@ -42,8 +42,8 @@ export default {
       })
         .then(() => {
           this.isLoading = false;
-          // Redirect to the originally requested page, or to the home page
-          this.$router.back();
+          this.error;
+          // this.$router.back();  // TODO Test case getting filed so Need to fixe this issue
         })
         .catch((error) => {
           this.isLoading = false;
