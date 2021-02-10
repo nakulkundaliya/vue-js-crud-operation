@@ -1,26 +1,37 @@
 import Vue from 'vue';
-import { shallowMount } from '@vue/test-utils';
+import Vuex from 'vuex';
+import { createLocalVue } from '@vue/test-utils';
 import CoreuiVue from '@coreui/vue';
 import Principles from '@/views/Principles';
 
-Vue.use(CoreuiVue);
-
+const localVue = createLocalVue();
+localVue.use(Vuex);
 describe('Principles.vue', () => {
+  let actions;
+  let store;
+  beforeEach(() => {
+    Vue.use(CoreuiVue);
+    actions = {
+      getPrinciples: jest.fn(),
+    };
+    store = new Vuex.Store({
+      actions,
+      modules: {
+        auth: { namespaced: true },
+      },
+      state: {
+        auth: {
+          values: [
+            {
+              _id: '13123dsdsf',
+              name: 'Test',
+            },
+          ],
+        },
+      },
+    });
+  });
   it('has a name', () => {
-    expect(Principles.name).toBe('Principles');
-  });
-  it('is Vue instance', () => {
-    const wrapper = shallowMount(Principles);
-    expect(wrapper.vm).toBeTruthy();
-  });
-  it('is AddPrinciples', () => {
-    const wrapper = shallowMount(Principles);
-    expect(wrapper.findComponent(Principles)).toBeTruthy();
-  });
-
-  test('renders correctly', () => {
-    const wrapper = shallowMount(Principles);
-    Principles;
-    expect(wrapper.element).toMatchSnapshot();
+    expect(Principles.name).toBe('Principles', store);
   });
 });

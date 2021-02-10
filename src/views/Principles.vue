@@ -28,6 +28,7 @@ export default {
   components: { CTableWrapper },
   created() {
     this.fetchDate();
+    console.log("=========", this.$store.state);
   },
 
   methods: {
