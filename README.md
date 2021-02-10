@@ -6,7 +6,7 @@
 
    \$ npm run start
 
-2. Run Fronedn code
+2. Run frontend code
 
    \$ npm i
 
